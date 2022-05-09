@@ -11,5 +11,6 @@ class WordGenerator:
         word_list = []
         for i in range(0, quantity):
             word_list.append(choice(self.common_words).lower() + ' ')
+        word_list[-1] = word_list[-1][:-1]
 
         return ''.join(word_list)
