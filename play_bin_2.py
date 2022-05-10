@@ -76,9 +76,8 @@ def score_writer():
                 json.dump(write_data, write_file)
             high_score_label.config(text=f'High Score\nCharacters per minute: {cpm}\nWords per minute: {wpm}')
         else:
-            high_score_label.config(text=f'''High Score\nCharacters per minute: {data['cpm']}\nWords per minute: {data['wpm']}''')
-
-
+            high_score_label.config(
+                text=f'''High Score\nCharacters per minute: {data['cpm']}\nWords per minute: {data['wpm']}''')
 
 
 def final_scorer():
